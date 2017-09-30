@@ -41,9 +41,10 @@
 		padding: 4px 6px;
 		border-radius: 2px;
 		background-color: $color-white;
-		.mintui-search{
+		.fa-search{
 			font-size: 12px;
 			color: $color-grey;
+			margin-right: 5px;
 		}
 	}
 	.mint-searchbar-core{
@@ -74,7 +75,7 @@
 	<div class="mint-search">
 		<div class="mint-searchbar">
 			<div class="mint-searchbar-inner">
-				<i class="mintui mintui-search"></i>
+				<i class="fa fa-search"></i>
 				<input type="search" class="mint-searchbar-core" :placeholder="placeholder" v-model="currentValue" ref="input" @click="visible = true">
 			</div>
 			<a class="mint-searchbar-cancel" v-show="visible" v-text="cancelText" @click="visible = false, currentValue = ''"></a>
@@ -121,7 +122,7 @@
 			}
 		},
 		mounted() {
-			this.autofocus && this.$refsf.input.focus();
+			this.autofocus && this.$refs.input.focus();
 		}
 	}
 </script>

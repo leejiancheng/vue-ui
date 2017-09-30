@@ -104,7 +104,6 @@
 						classes.push("is-placemiddle");
 				}
 				classes.push(this.className);
-				console.log(classes.join(" "));
 				return classes.join(" ");
 			}
 		}

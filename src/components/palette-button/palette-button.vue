@@ -1,4 +1,28 @@
 <!-- **
+ * mt-palette-button
+ * @module components/palette-button
+ * @desc 调色板按钮
+ * ********** API **********
+ * @param {String} [content] - 主按钮内容
+ * @param {Number} [offset=Math.PI / 4] - 角度偏移量
+ * @param {String} [direction=lt] - 按钮展开方向(可选值: lt, t, rt, r, rb, b, lb, l)
+ * @param {Number} [radius=90] - 按钮展开半径
+ * @param {String} [mainButtonStyle] - 主按钮样式
+ * ********** 方法 **********
+ * @param [toggle] - 切换按钮展开/收起状态
+ * @param [expand] - 展开按钮
+ * @param [collapse] - 收起按钮
+ * ********** Events **********
+ * @param {Function} [expand] - 按钮开始展开
+ * @param {Function} [expanded] - 按钮完全展开（动画效果执行结束）
+ * @param {Function} [collapse] - 按钮开始收起
+ *
+ * @example
+ * <mt-palette-button content="+">
+ *   <div class="my-icon-button"></div>
+ *   <div class="my-icon-button"></div>
+ *   <div class="my-icon-button"></div>
+ * </mt-palette-button>
  * -->
 
 <style lang="scss">

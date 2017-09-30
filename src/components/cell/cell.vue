@@ -3,7 +3,7 @@
  * @module components/cell
  * @desc 单元格
  * @param {string|Object} [to] - 跳转链接，使用 vue-router 的情况下 to 会传递给 router.push，否则作为 a 标签的 href 属性处理
- * @param {string} [icon] - 图标，提供 more, back，或者自定义的图标（传入不带前缀的图标类名，最后拼接成 .mintui-xxx）
+ * @param {string} [icon] - 图标，提供 more, back，或者自定义的图标（传入不带前缀的图标类名，最后拼接成 .fa-xxx）
  * @param {string} [title] - 标题
  * @param {string} [label] - 备注信息
  * @param {boolean} [is-link=false] - 可点击的链接
@@ -132,7 +132,7 @@
 		<div class="mint-cell-wrapper">
 			<div class="mint-cell-title">
 				<slot name="icon">
-					<i class="mintui" :class="'mintui-' + icon" v-if="icon"></i>
+					<i class="fa" :class="'fa-' + icon" v-if="icon"></i>
 				</slot>
 				<slot name="title">
 					<span class="mint-cell-text" v-text="title"></span>

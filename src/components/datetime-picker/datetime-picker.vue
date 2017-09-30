@@ -19,7 +19,7 @@
  * @param {Function} [confirm] - 点击确认按钮时的回调函数(回调参数: 目前的选择值)
  *
  * @example
-* <mt-datetime-picker v-model="pickerVisible" type="date" year-format="{value} 年" month-format="{value} 月" date-format="{value} 日"></mt-datetime-picker>
+ * <mt-datetime-picker v-model="pickerVisible" type="date" year-format="{value} 年" month-format="{value} 月" date-format="{value} 日"></mt-datetime-picker>
  * -->
 
 <style lang="scss" scoped>

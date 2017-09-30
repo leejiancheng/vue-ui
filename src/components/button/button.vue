@@ -7,7 +7,7 @@
  * @param {boolean} [plain=false] - 幽灵按钮
  * @param {string} [size=normal] - 尺寸，接受 normal, small, large
  * @param {string} [native-type] - 原生 type 属性
- * @param {string} [icon] - 图标，提供 more, back，或者自定义的图标（传入不带前缀的图标类名，最后拼接成 .mintui-xxx）
+ * @param {string} [icon] - 图标，提供 more, back，或者自定义的图标（传入不带前缀的图标类名，最后拼接成 .fa-xxx）
  * @param {slot} - 显示文本
  * @param {slot} [icon] 显示图标
  *
@@ -110,7 +110,7 @@
 	>
 		<span class="mint-button-icon" v-if="icon || $slots.icon">
 			<slot name="icon">
-				<i v-if="icon" class="mintui" :class="'mintui-' + icon"></i>
+				<i v-if="icon" class="fa" :class="'fa-' + icon"></i>
 			</slot>
 		</span>
 		<label class="mint-buton-text">

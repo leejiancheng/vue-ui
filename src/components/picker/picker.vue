@@ -1,5 +1,32 @@
 <!-- **
+ * mt-picker
+ * @module components/picker
+ * @desc 选择器，支持多 slot 联动。
+ * ********** API **********
+ * @param {Array} [slots=[]] - slot 对象数组
+ * @param {String} [valueKey=''] - 当 values 为对象数组时，作为文本显示在 Picker 中的对应字段的字段名
+ * @param {Boolean} [showToolbar=false] - 是否在组件顶部显示一个 toolbar，内容自定义
+ * @param {Number} [visibleItemCount=5] - slot 中可见备选值的个数
+ * @param {Number} [itemHeight=36] - 每个 slot 的高度
 
+ * ********** 绑定到 slots 属性的数组由对象组成，每个对象都对应一个 slot，它们有如下键名 **********
+ * @param [divider] - 对应 slot 是否为分隔符
+ * @param [content] - 分隔符 slot 的显示文本
+ * @param [values] - 对应 slot 的备选值数组。若为对象数组，则需在 mt-picker 标签上设置 value-key 属性来指定显示的字段名
+ * @param [defaultIndex] - 对应 slot 初始选中值，需传入其在 values 数组中的序号，默认为 0
+ * @param [textAlign] - 对应 slot 的对齐方式
+ * @param [flex] - 对应 slot CSS 的 flex 值
+ * @param [className] - 对应 slot 的类名
+
+  * ********** Slot **********
+ * @param [] - 当 showToolbar 为 true 时，toolbar 中的内容
+ * ********** Events **********
+ * @param {Function} [expand] - 按钮开始展开
+ * @param {Function} [expanded] - 按钮完全展开（动画效果执行结束）
+ * @param {Function} [collapse] - 按钮开始收起
+ *
+ * @example
+ * <mt-picker :slots="slots" @change="onValuesChange"></mt-picker>
  * -->
 
 <style lang="scss" scoped>

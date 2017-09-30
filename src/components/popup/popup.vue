@@ -87,7 +87,7 @@
 </template>
 
 <script>
-	import Popup from "./popup.js";
+	import Popup from "./popup-mixins.js";
 	import Vue from "vue";
 	import "./popup.css";
 
