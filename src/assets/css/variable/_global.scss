@@ -1,10 +1,31 @@
 $color-blue: #26a2ff;
 $color-white: #fff;
 $color-grey: #d9d9d9;
-$border-color: #c8c8cd;
-$success-color: #4caf50;
-$error-color: #f44336;
-$warning-color: #ffc107;
+
+// $border-color: #c8c8cd;
+
+
+/* 主色 */
+$primary-color: 					#2d8cf0;			// 主色调
+$light-primary-color: 				#5cadff;			// 主色调的hover
+$dark-primary-color: 				#2b85e4;			// 主色调的active
+
+/* 辅助色 */
+$default-color: 					#7e848c;			// 默认颜色
+$info-color: 						#2d8cf0;			// 信息提示
+$success-color: 					#19be6b;			// 成功
+$warning-color: 					#ff9900;			// 警告
+$error-color: 						#ed3f14;			// 失败
+
+/* 中心色 */
+$title-color: 						#1c2438;			// 标题颜色
+$content-color: 					#495060;			// 正文颜色
+$sub-color: 						#80848f;			// 辅助/图标颜色
+$disabled-color: 					#bbbec4;			// 失效颜色
+$border-color: 						#dddee1;			// 边框颜色
+$divider-color: 					#e9eaec;			// 分割线颜色
+$background-color: 					#f8f8f9;			// 背景颜色
+
 
 /* Cell Component */
 $cell-value-color: #888;
@@ -42,3 +63,5 @@ $radio-title-color: #888;
 
 /* z-index */
 $z-index-normal: 1;
+
+

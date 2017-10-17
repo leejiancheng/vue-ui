@@ -16,6 +16,19 @@ const camelCase = (name) => {
 	}).replace(MOZ_HACK_REGEXP, "Moz$1")
 };
 
+export const oneOf = (value, validList) => {
+	for (let i = 0; i < validList.length; i++) {
+		if (value === validList[i]) {
+			return true;
+		}
+	}
+	return false;
+}
+
+export const camelcaseToHyphen = (str) => {
+	return str.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase();
+}
+
 export const on = (() => {
 	if (!isServer && document.addEventListener) {
 		return function(element, event, handler) {
